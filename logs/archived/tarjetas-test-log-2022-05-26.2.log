@@ -1,0 +1,37 @@
+2022-05-26 13:04:17,237 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-26 13:04:17,565 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-26 13:04:17,571 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-26 13:04:17,577 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-26 13:04:17,590 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1653588257590 with initial instances count: 1
+2022-05-26 13:04:17,594 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICIO-TARJETAS with eureka with status UP
+2022-05-26 13:04:17,595 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1653588257595, current=UP, previous=STARTING]
+2022-05-26 13:04:17,596 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:847926e7052f3ddedd2b302bda9e61aa: registering service...
+2022-05-26 13:04:17,644 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:847926e7052f3ddedd2b302bda9e61aa - registration status: 204
+2022-05-26 13:04:17,717 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ApiTarjetasApplication in 5.569 seconds (JVM running for 6.361)
+2022-05-26 13:09:17,256 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-26 13:14:17,260 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-26 13:19:17,266 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-05-26 13:21:24,209 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application SERVICIO-TARJETAS with eureka with status DOWN
+2022-05-26 13:21:24,210 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1653589284210, current=DOWN, previous=UP]
+2022-05-26 13:21:24,210 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:847926e7052f3ddedd2b302bda9e61aa: registering service...
+2022-05-26 13:21:24,215 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:847926e7052f3ddedd2b302bda9e61aa - registration status: 204
+2022-05-26 13:21:24,230 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-26 13:21:24,440 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-05-26 13:21:24,440 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-05-26 13:21:24,506 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-05-26 13:21:24,508 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2022-05-26 13:21:27,545 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Unregistering ...
+2022-05-26 13:21:27,553 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:847926e7052f3ddedd2b302bda9e61aa - deregister  status: 200
+2022-05-26 13:21:27,591 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient
+2022-05-26 13:22:11,897 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-05-26 13:22:11,900 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ApiTarjetasApplication using Java 17.0.2 on LAPTOP-BDSVOCO1 with PID 12464 (C:\Users\106486781\Documents\Java\IdeaProjects\Proyecto-Tarjetas\Tarjetas-main\target\classes started by 106486781 in C:\Users\106486781\Documents\Java\IdeaProjects\Proyecto-Tarjetas\Tarjetas-main)
+2022-05-26 13:22:11,900 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-05-26 13:22:11,936 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-26 13:22:11,936 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-26 13:22:12,481 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-26 13:22:12,549 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2022-05-26 13:22:12,727 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=d54c4d0b-ad04-3f90-901d-b82cc0354e4e
+2022-05-26 13:22:13,165 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9100 (http)
+2022-05-26 13:22:13,172 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9100"]
+2022-05-26 13:22:13,173 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
