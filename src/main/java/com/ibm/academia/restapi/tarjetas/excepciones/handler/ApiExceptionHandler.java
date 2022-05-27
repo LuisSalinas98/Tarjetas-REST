@@ -14,7 +14,7 @@ import com.ibm.academia.restapi.tarjetas.excepciones.NotFoundException;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 @ControllerAdvice
-public class ApiUniversidadMException {
+public class ApiExceptionHandler {
 
 	@ExceptionHandler(value = NotFoundException.class)
 	public ResponseEntity<Object> noExisteException(NotFoundException exception){
@@ -36,6 +36,15 @@ public class ApiUniversidadMException {
 
 	@ExceptionHandler(value = MethodArgumentTypeMismatchException.class)
 	public ResponseEntity<Object> valorParametrosException(MethodArgumentTypeMismatchException exception){
+
+		Map<String, Object> respuesta = new HashMap<String, Object>();
+		respuesta.put("error", "Uno de los parametros es invalido");
+
+		return new ResponseEntity<>(respuesta, HttpStatus.BAD_REQUEST);
+	}
+
+	@ExceptionHandler(value = IllegalArgumentException.class)
+	public ResponseEntity<Object> valorParametrosException(IllegalArgumentException exception){
 
 		Map<String, Object> respuesta = new HashMap<String, Object>();
 		respuesta.put("error", "Uno de los parametros es invalido");

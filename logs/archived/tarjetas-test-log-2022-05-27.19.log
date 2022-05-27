@@ -1,0 +1,35 @@
+2022-05-27 12:12:05,686 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-27 12:12:07,134 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-27 12:12:08,559 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-05-27 12:12:09,438 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-05-27 12:12:10,554 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-27 12:12:10,775 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-auto-1"]
+2022-05-27 12:12:10,809 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 59020 (http) with context path '/api/v1/tarjetas'
+2022-05-27 12:12:10,812 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 59020
+2022-05-27 12:12:10,821 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-05-27 12:12:10,914 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-05-27 12:12:10,925 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-05-27 12:12:10,993 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-05-27 12:12:10,994 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-05-27 12:12:10,994 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-05-27 12:12:10,995 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-05-27 12:12:10,996 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-05-27 12:12:10,996 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-05-27 12:12:10,997 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-05-27 12:12:11,581 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-05-27 12:12:11,594 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-05-27 12:12:11,606 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-27 12:12:11,633 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1653671531632 with initial instances count: 1
+2022-05-27 12:12:11,653 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application SERVICIO-TARJETAS with eureka with status UP
+2022-05-27 12:12:11,655 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1653671531655, current=UP, previous=STARTING]
+2022-05-27 12:12:11,658 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:b345492c79e622e45ae723e21c271f87: registering service...
+2022-05-27 12:12:11,727 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SERVICIO-TARJETAS/servicio-tarjetas:b345492c79e622e45ae723e21c271f87 - registration status: 204
+2022-05-27 12:12:11,952 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ApiTarjetasApplication in 17.057 seconds (JVM running for 19.295)
+2022-05-27 12:13:08,879 INFO org.apache.juli.logging.DirectJDKLog [http-nio-auto-1-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-27 12:13:08,881 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-05-27 12:13:08,888 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-auto-1-exec-1] Completed initialization in 7 ms
+2022-05-27 12:13:09,064 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-auto-1-exec-1] Resolved [java.lang.IllegalArgumentException: No enum constant com.ibm.academia.restapi.tarjetas.enumeradores.TipoPasion.SHOPPIN]
+2022-05-27 12:14:36,889 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-auto-1-exec-10] Resolved [java.lang.IllegalArgumentException: No enum constant com.ibm.academia.restapi.tarjetas.enumeradores.TipoPasion.FUTBOL]
+2022-05-27 12:14:46,393 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$1 [Thread-6] Flushing remaining spans on shutdown
+2022-05-27 12:14:46,402 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application SERVICIO-TARJETAS with eureka with status DOWN
+2022-05-27 12:14:46,403 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1653671686403, current=DOWN, previous=UP]

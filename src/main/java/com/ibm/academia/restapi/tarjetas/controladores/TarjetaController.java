@@ -1,10 +1,7 @@
 package com.ibm.academia.restapi.tarjetas.controladores;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import javax.validation.Valid;
@@ -40,9 +37,10 @@ public class TarjetaController {
 
 
 	@GetMapping("/obtener-tipo-tarjeta")
-	public ResponseEntity<?> obtenerTipoTarjeta(@RequestParam TipoPasion pasion, @RequestParam BigDecimal salario,
+	public ResponseEntity<?> obtenerTipoTarjeta(@RequestParam String pasion, @RequestParam BigDecimal salario,
 			@RequestParam Integer edad) {
-		String tipoTarjeta = tarjetaDao.obtenerTipoTarjeta(pasion, salario, edad);
+		TipoPasion pasionMayus = TipoPasion.valueOf(pasion.toString().toUpperCase());
+		String tipoTarjeta = tarjetaDao.obtenerTipoTarjeta(pasionMayus, salario, edad);
 		
 		return new ResponseEntity<String>(tipoTarjeta, HttpStatus.OK);
 	}
